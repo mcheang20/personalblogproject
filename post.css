@@ -1,0 +1,49 @@
+h1 {
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 5em;
+    font-weight: 300;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(66, 61, 61, 0.616);
+}
+
+h2 {
+    border-bottom: 2px solid rgb(226, 220, 220);
+    padding-bottom: 20px;
+}
+
+.post-banner {
+    background-image: url(roland-wood-hvNSGjZYX9s-unsplash.jpg);
+    background-size: cover;
+    text-align: center;
+    background-position: 0 -100px;
+    padding: 30px 0;
+}
+
+.post-content {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    padding: 20px 50px;
+    font-weight: 300;
+}
+
+.post-content div {
+    padding-left: 10px;
+}
+
+@media (max-width: 900px) {
+    .post-content {
+        grid-template-columns: 100%;
+        padding: 0 50px;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 3em;
+    }
+}

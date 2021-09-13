@@ -10,7 +10,7 @@ h2 {
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 400;
 }
 
@@ -19,7 +19,7 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px;
+    padding: 20px;
     background-color: rgb(17, 36, 36);
 }
 
@@ -28,12 +28,12 @@ h3 {
     background: none;
     border-radius: .5em;
     justify-content: flex-end;
-    border: 1px solid rgb(202, 109, 21);
+    border: 2px solid rgba(202, 108, 21, 0.521);
+    transition: .3s ease-in-out;
 }
 
 .navbar button:hover {
-    background-color: white;
-    transition: .5s ease-out;
+    background-color: rgb(255, 255, 255);
 }
 
 .navbar a {
@@ -48,27 +48,29 @@ h3 {
 }
 
 .banner {
-    height: 400px;
-    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
     background-image: url(virul-weerasooriya-99ZyoSevEqA-unsplash.jpg);
     background-size: cover;
     background-position: center;
     font-size: 1.4em;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(66, 61, 61, 0.616);
     color: white;
 }
 
 .banner h1 {
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .recent {
-    height: 400px;
+    font-weight: 300;
+    text-shadow: 1px 1px 1px rgba(66, 61, 61, 0.616);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.301);
-    padding: 0 50px;
-    border-bottom: 2px solid white;
+    padding: 10px 50px;
 }
 
 .recent div {
@@ -76,12 +78,12 @@ h3 {
     width: 350px;
     padding: 10px;
     border-radius: .6em;
+    font-size: 1.1em;
 }
 
 .recent a {
     text-decoration: none;
     color: white;
-    font-size: 1.2em;
     transition: all .3s ease-in-out;
 }
 
@@ -107,17 +109,32 @@ h3 {
 .about {
     display: grid;
     grid-template-columns: 20% 20% 60%;
-    height: 300px;
-    padding: 0 50px;
+    padding: 20px 50px;
     background-color: white;
+    font-weight: 300;
+}
+
+#my-about a {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+#my-about a:hover {
+    color: rgb(202, 109, 21);
 }
 
 .all-blogs {
     border-right: 2px solid rgb(226, 220, 220);
 }
 
-.all-blogs ul{
-    list-style-type: none;
+.all-blogs a {
+    text-decoration: none;
+    color: black;
+}
+
+.all-blogs a:hover {
+    color: rgb(202, 109, 21);
 }
 
 #my-pic img{
@@ -127,15 +144,23 @@ h3 {
     border-radius: 50%;
     margin: 20px;
 }
-footer {
+
+.foot {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
     background-color: rgb(17, 36, 36);
     color: white;
-    height: 100px;
 }
 
-footer a {
+.foot a {
     color: white;
     text-decoration: none;
+}
+
+.foot ul {
+    list-style-type: none;
 }
 
 @media(max-width: 550px) {
@@ -154,6 +179,7 @@ footer a {
     .recent div {
         height: 250px;
         width: 250px;
+        margin: 10px;
     }
 }
 
@@ -161,19 +187,17 @@ footer a {
     .recent {
         flex-direction: column;
         align-items: center;
-        height: 900px;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
     }
 }
 
 @media (max-width: 860px) {
     .banner {
         font-size: 1.2em;
-    }
-}
-
-@media (max-width: 450px) {
-    .banner {
-        height: 600px;
     }
 }
     
@@ -184,23 +208,10 @@ footer a {
     }
 }
 
-@media (max-width: 1020px) {
-    .about {
-        height: 350px;
-    }
-}
-
 @media (max-width: 900px) {
     .about {
         grid-template-columns: 100%;
-        grid-template-rows: 15% 30% 55%;
         margin: 0 auto;
-        height: 800px;
-    }
-
-    #about-me {
-        text-align: center;
-
     }
 
     .all-blogs {
@@ -211,6 +222,9 @@ footer a {
 
     .all-blogs ul {
         padding: 0;
+        list-style-type: none;
+        padding-bottom: 10px;
+        border-bottom: 2px solid rgb(226, 220, 220);
     }
 
     #my-pic {
@@ -225,8 +239,16 @@ footer a {
     }
 }
 
-@media (max-width: 600px) {
-    .about {
-        height: 900px;
+@media (max-width: 500px) {
+    .foot {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 350px) {
+    #my-pic img {
+        height: 150px;
+        width: 150px;
     }
 }
