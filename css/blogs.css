@@ -1,6 +1,7 @@
-h1 {
+#blogs-head {
     font-weight: 300;
     margin-left: 60px;
+    color: black;
 }
 
 .blogs-index {
@@ -32,27 +33,27 @@ h1 {
 }
 
 #post-one {
-    background-image: url(roland-wood-hvNSGjZYX9s-unsplash.jpg);
+    background-image: url(../images/roland-wood-hvNSGjZYX9s-unsplash.jpg);
 }
 
 #post-two {
-    background-image: url(baptist-standaert-mx0DEnfYxic-unsplash.jpg);
+    background-image: url(../images/baptist-standaert-mx0DEnfYxic-unsplash.jpg);
 }
 
 #post-three {
-    background-image: url(jc-gellidon-3uqauucYhjQ-unsplash.jpg);
+    background-image: url(../images/jc-gellidon-3uqauucYhjQ-unsplash.jpg);
 }
 
 #post-four{
-    background-image: url(derch-4CMq1GxDSPA-unsplash.jpg);
+    background-image: url(../images/derch-4CMq1GxDSPA-unsplash.jpg);
 }
 
 #post-five {
-    background-image: url(aaron-burden-U4w7y0lowL8-unsplash.jpg);
+    background-image: url(../images/aaron-burden-U4w7y0lowL8-unsplash.jpg);
 }
 
 #post-six {
-    background-image: url(priscilla-du-preez-IEhdpoA9zrY-unsplash.jpg);
+    background-image: url(../images/priscilla-du-preez-IEhdpoA9zrY-unsplash.jpg);
 }
 
 @media (max-width: 1050px) {
@@ -69,7 +70,8 @@ h1 {
         grid-template-rows: none;
     }
 
-    h1 {
+    #blogs-head {
         text-align: center;
+        margin: 0;
     }
 }

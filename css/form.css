@@ -1,6 +1,7 @@
-h1 {
+#form-head {
     font-weight: 300;
     font-size: 3em;
+    color: black;
 }
 
 form {
